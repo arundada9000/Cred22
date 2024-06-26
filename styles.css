@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1.35rem;
+  font-size: 0.8rem;
+}
+.top i {
+  color: white;
+}
+.buttons {
+  background-image: linear-gradient(to bottom, #337ab7 0%, #337ab7 100%);
+  border: 1px solid #23517a;
+  border-radius: 4px 4px 4px 4px;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.buttons,
+.top img {
+  cursor: pointer;
+}
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+}
+.image img {
+  height: 2rem;
+}
+main {
+  width: 100%;
+  min-height: 100svh;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  /* background-image: url("./public/assets/college.jpeg");
+   */
+  background-color: lightblue;
+  background-position: center;
+}
+.inside_main {
+  width: 100%;
+  max-width: 1000px;
+}
+.logos_one {
+  padding-top: 1rem;
+  gap: 1rem;
+}
+.logos_one img {
+  height: 2rem;
+}
+.logos_two {
+  margin-top: 2rem;
+}
+.logos_two img {
+  height: 6rem;
+}
+.main_content {
+  margin-top: 2rem;
+}
+.main_content h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.main_content h1 {
+  color: white;
+}
+.logos_three {
+  margin-top: 5rem;
+  gap: 2rem;
+}
+.logos_three img {
+  height: 6rem;
+}
+.signup_section {
+  width: 100%;
+}
+.signup {
+  width: 50%;
+  max-width: 900px;
+  font-size: 1.2rem;
+}
+.signup_section h1 {
+  color: blue;
+  margin-bottom: 3rem;
+}
+.signup_section p {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-wrap: wrap;
+}
+.signup_section button {
+  color: white;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-image: linear-gradient(to bottom, #337ab7 0%, #337ab7 100%);
+  border: 1px solid #23517a;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+button:hover {
+  background-image: linear-gradient(to bottom, #2b6699 0%, #2b6699 100%);
+  cursor: pointer;
+}
+.about_us_section {
+  font-size: 0.9rem;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+.about_us_container {
+  width: 70%;
+  gap: 2rem;
+}
+.about_us {
+  flex: 1 1 calc(25%);
+  flex-wrap: wrap;
+  text-wrap: wrap;
+}
+.about_us_image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.about_us_image img {
+  width: 70%;
+  max-width: 100px;
+}
+.about_us h1 {
+  font-size: 0.8rem;
+}
+footer {
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  background-color: #23517a;
+  color: white;
+}
+.line {
+  border: 1px solid white;
+  width: 50%;
+}
+.floating_btn {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 0.25rem;
+  font-size: 0.95rem;
+  border: none;
+  padding: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(106, 95, 95);
+  color: white;
+  border-radius: 4px;
+}
+.floating_btn:hover {
+  background-color: #2b6699;
+  animation: hoverEffect 0.5s forwards;
+}
+.floating_btn img {
+  width: 1.5rem;
+}
+
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.signup_section_form {
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.signup_section_form form {
+  width: 100%;
+  max-width: 600px;
+}
+.signup_section_form form input,
+.signup_section_form form select {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 5px;
+}
+.signup_section_form form select {
+  color: gray;
+}
+.submit_button {
+  width: 100%;
+}
+.submit_button button {
+  padding: 1rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.product_section {
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.product_container h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.product_container h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.product_container {
+  width: 80%;
+  max-width: 800px;
+}
+.product_container img {
+  width: 100%;
+}
+#follow_linkedin {
+  padding: 1.3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-top: 3rem;
+}
+#follow_linkedin i {
+  color: #337ab7;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .top,
+  .about_us_container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #follow_linkedin {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .signup {
+    width: 100%;
+  }
+  .half_input {
+    flex-direction: column;
+  }
+  form,
+  main,
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
