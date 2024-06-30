@@ -61,6 +61,15 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
 }
+main h1 {
+  text-align: center;
+}
+.first_content {
+  padding: 0rem 4rem;
+}
+.second_content {
+  color: skyblue !important;
+}
 .inside_main {
   width: 100%;
   max-width: 1000px;
