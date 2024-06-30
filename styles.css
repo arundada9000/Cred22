@@ -49,10 +49,17 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
-  /* background-image: url("./public/assets/college.jpeg");
-   */
-  background-color: lightblue;
   background-position: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(5%, 16%, 31%, 0.68) 0%,
+      rgba(5%, 16%, 31%, 0.68) 100%
+    ),
+    url(https://d30itml3t0pwpf.cloudfront.net/api/v3/medias/16361625/image/opt/original/1685653453-d809e301);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .inside_main {
   width: 100%;
@@ -256,6 +263,9 @@ footer {
   padding: 3px;
   border-radius: 5px;
 }
+.half_input {
+  gap: 1rem;
+}
 @media (max-width: 600px) {
   .top,
   .about_us_container {
@@ -278,5 +288,16 @@ footer {
   section {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .line {
+    width: 70%;
+  }
+  main {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0%, 0%, 0%, 0.64) 0%,
+        rgba(0%, 0%, 0%, 0.64) 100%
+      ),
+      url(https://d30itml3t0pwpf.cloudfront.net/api/v3/medias/16374896/image/opt/original/1686898149-e8ac075e);
   }
 }
